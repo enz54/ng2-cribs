@@ -10,13 +10,38 @@
                 <span class="badge badge-warning">
                   {{crib.type}}
                 </span>
-              </h4><i class="fas fa-user"></i>
-              <h3> {{crib.price | currency:'EUR':true}}</h3>
+              </h4>
+              <h3><i class="fa fa-tag"></i> {{crib.price | currency:'EUR':true}}</h3>
 
-              <h4> {{crib.address}}</h4>
-              <!-- <hr>
-            <button class="btn btn-primary" href="#">send</button> -->
+              <h4><i class="fa fa-home" aria-hidden="true"></i> {{crib.address}}</h4>
+              <hr>
+            <button 
+              class="btn btn-sm btn-success" href="#"
+              *ngIf="!crib.showDetails"
+              (click)="crib.showDetails = !crib.showDetails">
+              send
+            </button>
             </div>
+
+            
+            <div *ngIf="crib.showDetails">
+              <h4>
+                <span class="badge badge-warning">
+                  {{crib.type}}
+                </span>
+              </h4>
+              <h3><i class="fa fa-tag"></i> {{crib.price | currency:'EUR':true}}</h3>
+
+              <h4><i class="fa fa-home" aria-hidden="true"></i> {{crib.address}}</h4>
+              <hr>
+            <button 
+              class="btn btn-sm btn-success" href="#"
+              *ngIf="!crib.showDetails"
+              (click)="crib.showDetails = !crib.showDetails">
+              send
+            </button>
+            </div>
+            
           </div>
 
         </div>
