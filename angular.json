@@ -25,7 +25,11 @@
             "styles": [
               "src/styles.css",
               "../ng2-cribs/node_modules/bootstrap/dist/css/bootstrap.min.css",
-              "../ng2-cribs/node_modules/font-awesome/css/font-awesome.css"
+              "../ng2-cribs/node_modules/font-awesome/css/font-awesome.css",
+              "../ng2-cribs/node_modules/@fortawesome/fontawesome-free/css/fontawesome.css",
+              "../ng2-cribs/node_modules/@fortawesome/fontawesome-free/css/regular.css",
+              "../ng2-cribs/node_modules/@fortawesome/fontawesome-free/css/solid.css",
+              "../ng2-cribs/node_modules/@fortawesome/fontawesome-free/css/brands.css"
             ],
             "scripts": []
           },
